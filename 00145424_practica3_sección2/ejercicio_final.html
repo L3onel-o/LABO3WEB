@@ -1,26 +1,32 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio Final - Guia 3</title>
+    <title>Ejercicio Final – Guía 3</title>
     <link rel="stylesheet" href="ejercicio_final.css">
 </head>
 <body>
-<div class="shopping-cart">
+    <div class="shopping-cart">
         <h2>Carrito de compras</h2>
+        
         <ul>
             <li>
-                <p>
+                <div>
                     <a href="https://uca.edu.sv/">
                         <strong>Pago de colegiatura</strong>
-                    </a>: <span class="price">$99.95</span>
-                </p>
+                    </a>
+                    <span class="price">$99.95</span>
+                </div>
                 <img src="https://img.freepik.com/psd-gratis/ilustracion-dinero-aislada_23-2151568514.jpg?semt=ais_hybrid&w=80&q=80" alt="Pago de colegiatura" />
             </li>
             <li>...</li>
         </ul>
-        <p class="total">Importe total: <span class="price">$99.95</span></p>
-        <a class="btn-pay" href="#" onclick="alert('¡Procesando pago!'); return false;">Pagar</a>
+        
+        <div class="cart-footer">
+            <p class="total">Importe total: <span class="price">$99.95</span></p>
+            <a class="btn-pay" href="#" onclick="alert('¡Procesando pago!'); return false;">Pagar</a>
+        </div>
     </div>
 </body>
 </html>
