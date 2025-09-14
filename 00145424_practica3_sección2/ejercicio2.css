@@ -1,0 +1,28 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --pink: #e12afb;
+}
+
+.box {
+    display: flex;
+    background-color: var(--pink);
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-wrap controla si los elementos deben saltar a una nueva linea 
+    cuando no caben en el contenedor*/
+}
+
+.box div {
+    margin: 10px 5px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: var(--blue);
+    width: 33%;
+}
+
+/*First child se refiere al primer elemento hijo de un contenedor padre*/
+.box div:first-child {
+    width: 64%;
+}
+
